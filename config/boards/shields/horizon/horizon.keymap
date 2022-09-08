@@ -81,8 +81,10 @@
             };
     };
 
+    &caps_word {
+        continue-list = <UNDERSCORE FSLH MINUS LS(FSLH) DELETE BSPC>;
+    };
 
-/ {
     keymap {
         compatible = "zmk,keymap";
 
