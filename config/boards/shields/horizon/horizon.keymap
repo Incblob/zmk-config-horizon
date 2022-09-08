@@ -81,10 +81,6 @@
             };
     };
 
-&caps_word {
-    continue-list = <UNDERSCORE FSLH MINUS DELETE BSPC>;
-};
-
 
 / {
     keymap {
