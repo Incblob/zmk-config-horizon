@@ -119,7 +119,6 @@
                 &trans   &kp NON_US_BSLH     &none                       &as RA(N7) RA(MINUS) &as RA(N0) LS(N7)  &none    &kp LC(FSLH) &kp LC(KP_PLUS)  &kp N0              &kp N1     &kp N2       &kp N3      &as COMMA DOT  &kp LC(FSLH)
                 &trans    &none               &none                       &none                &kp LALT          &mo 1    &none         &none           &lt 2 SPACE          &none      &kp COMMA    &DOT       &kp COMMA       &none
             >;
-            >;
         };
 
         both_layer {
