@@ -55,7 +55,8 @@
             layers = <0>;
         }; 
     };
-
+};
+/{
     macros {
         line_select: line_select {
             compatible = "zmk,behavior-macro";
@@ -80,11 +81,12 @@
                 bindings = <&kp>, <&kp>; 
             };
     };
+};
+&caps_word {
+    continue-list = <UNDERSCORE FSLH MINUS LS(FSLH) DELETE BSPC>;
+};
 
-    &caps_word {
-        continue-list = <UNDERSCORE FSLH MINUS LS(FSLH) DELETE BSPC>;
-    };
-
+/{
     keymap {
         compatible = "zmk,keymap";
 
