@@ -82,7 +82,7 @@
     };
 
 &caps_word {
-    continue-list = <UNDERSCORE FSLH MINUS LS(FSLH) DELETE BSPC>;
+    continue-list = <UNDERSCORE FSLH MINUS DELETE BSPC>;
 };
 
 
