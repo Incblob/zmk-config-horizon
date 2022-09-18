@@ -97,7 +97,7 @@
             bindings = <
                 &kp LSHFT       &as LS(Q) Q &as LS(W) W &as LS(F) F   &as LS(P) P     &as LS(B) B                                                 &as LS(J) J &as LS(L) L         &as LS(U) U         &as LS(Z) Z     &as LS(NON_US_HASH) NON_US_HASH   &kp LC(HOME)
                 &kp LS(TAB) TAB &as LS(A) A &as LS(R) R &as LS(S) S   &as LS(T) T     &as LS(G) G                                                 &as LS(M) M &as LS(N) N         &as LS(E) E         &as LS(I) I     &as LS(O) O                       &as LC(RET) RET
-                &as LCTRL       &as LS(Y) Y &as LS(X) X &as LS(C) C   &as LS(D) D     &as LS(V) V   &kp LC(SPACE)  &capsword                         &as LS(K) K &as LS(H) H         &as LS(COMMA) COMMA &as LS(DOT) DOT &as LC(G) LC(F)                   &as F11 F10
+                &as LCTRL       &as LS(Y) Y &as LS(X) X &as LS(C) C   &as LS(D) D     &as LS(V) V   &kp LC(SPACE)  &caps_word                         &as LS(K) K &as LS(H) H         &as LS(COMMA) COMMA &as LS(DOT) DOT &as LC(G) LC(F)                   &as F11 F10
                 &mt LS(F12) F12   &none       &kp LGUI    &kp LG(LS(S)) &mt LALT ESC  &lt 1 SPACE   &kp BSPC    &mt LSHIFT DELETE   &lt 2 SPACE &as LS(FSLH) FSLH   &kp LEFT            &kp UP          &kp DOWN                        &kp RIGHT
             >;
         };
