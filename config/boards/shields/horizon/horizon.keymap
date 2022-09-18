@@ -32,13 +32,13 @@
         compatible = "zmk,combos";
         combo_enter {
             timeout-ms = <MODTIME>;
-            key-positions = <33 34>;
+            key-positions = <34 35>;
             bindings = <&mt LS(ENTER) ENTER>;
             layers = <0>;
         };
         combo_ctl_bsp {
             timeout-ms = <MODTIME>;
-            key-positions = <34 35>;
+            key-positions = <33 34>;
             bindings = <&kp LC(BSPC) >;
             layers = <0>;
         };
