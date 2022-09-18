@@ -95,10 +95,10 @@
         default_layer {
 
             bindings = <
-                &kp LSHFT       &as LS(Q) Q &as LS(W) W &as LS(F) F   &as LS(P) P     &as LS(B) B                                 &as LS(J) J &as LS(L) L         &as LS(U) U         &as LS(Z) Z     &as LS(NON_US_HASH) NON_US_HASH   &kp LC(HOME)
-                &as LS(TAB) TAB &as LS(A) A &as LS(R) R &as LS(S) S   &as LS(T) T     &as LS(G) G                                 &as LS(M) M &as LS(N) N         &as LS(E) E         &as LS(I) I     &as LS(O) O                       &as LC(RET) RET
-                &kp LCTRL       &as LS(Y) Y &as LS(X) X &as LS(C) C   &as LS(D) D     &as LS(V) V   &kp LC(SPACE)  &caps_word     &as LS(K) K &as LS(H) H         &as LS(COMMA) COMMA &as LS(DOT) DOT &as LC(G) LC(F)                   &as F11 F10
-                &mt LS(F12) F12 &none       &kp LGUI    &kp LG(LS(S)) &mt LALT ESC  &lt 1 SPACE   &kp BSPC    &mt LSHIFT DELETE   &lt 2 SPACE &as LS(FSLH) FSLH   &kp LEFT            &kp UP          &kp DOWN                        &kp RIGHT
+                &kp LSHFT       &as LS(Q) Q   &as LS(W) W &as LS(F) F   &as LS(P) P     &as LS(B) B                                 &as LS(J) J &as LS(L) L         &as LS(U) U         &as LS(Z) Z     &as LS(NON_US_HASH) NON_US_HASH   &kp LC(HOME)
+                &as LS(TAB) TAB &as LS(A) A   &as LS(R) R &as LS(S) S   &as LS(T) T     &as LS(G) G                                 &as LS(M) M &as LS(N) N         &as LS(E) E         &as LS(I) I     &as LS(O) O                       &as LC(RET) RET
+                &kp LCTRL       &as LS(Y) Y   &as LS(X) X &as LS(C) C   &as LS(D) D     &as LS(V) V   &kp LC(SPACE)  &caps_word     &as LS(K) K &as LS(H) H         &as LS(COMMA) COMMA &as LS(DOT) DOT &as LC(G) LC(F)                   &as F11 F10
+                &mt LS(F12) F12 &kp LC(SPACE) &kp LGUI    &kp LG(LS(S)) &mt LALT ESC  &lt 1 SPACE   &kp BSPC    &mt LSHIFT DELETE   &lt 2 SPACE &as LS(FSLH) FSLH   &kp LEFT            &kp UP          &kp DOWN                        &kp RIGHT
             >;
         };
 
@@ -137,10 +137,10 @@
         gaming_layer {
 
             bindings = <
-                &kp ESC   &kp N1   &kp N2    &kp N3      &kp N4        &kp N5                    &kp F1      &kp F2   &kp F5   &kp F9  &kp F10  &to 0
-                &kp TAB   &kp Q   &kp W    &kp E      &kp R       &kp T                          &none       &none    &none   &none  &none  &none
-                &kp LSHFT &kp A   &kp S    &kp D      &kp F       &kp G    &kp J    &none        &none       &none    &none    &none   &none    &none
-                &kp LCTRL &kp Z   &kp X    &mt LALT C &kp SPACE  &lt 5 V   &kp K    &none        &none       &none   &kp LEFT &kp UP &kp DOWN &kp RIGHT
+                &kp ESC   &kp N1  &kp N2   &kp N3     &kp N4        &kp N5                    &kp F1      &kp F2   &kp F5   &kp F9  &kp F10  &to 0
+                &kp TAB   &kp Q   &kp W    &kp E      &kp R       &kp T                          &none       &none    &none   &none  &none  &kp ENTER 
+                &kp LSHFT &kp A   &kp S    &kp D      &kp F       &kp G    &kp J    &none        &none       &none    &none    &none   &none    &kp ENTER
+                &kp LCTRL &kp Z   &kp X    &mt LALT C      &kp SPACE  &lt 5 V   &kp K    &none        &none       &none   &kp LEFT &kp UP &kp DOWN &kp RIGHT
                                           
             >;
         };
