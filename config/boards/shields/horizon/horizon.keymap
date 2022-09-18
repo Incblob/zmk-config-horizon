@@ -32,7 +32,7 @@
         compatible = "zmk,combos";
         combo_enter {
             timeout-ms = <MODTIME>;
-            key-positions = <34 35>;
+            key-positions = <33 34>;
             bindings = <&mt LS(ENTER) ENTER>;
             layers = <0>;
         };
@@ -105,10 +105,10 @@
         left_layer {
           
             bindings = <
-                &none               &none           &as LS(MINUS) MINUS &as LS(SEMI) SEMI &as LS(LBKT) LBKT  &kp RA(RBKT)                          &none           &none           &kp UP      &kp LS(MINUS)   &none                  &kp LS(KP_PLUS)
-                &kp LC(X)           &as LS(SQT) SQT &kp LS(N1)          &kp RA(Q)         &kp LS(N6)         &kp LS(N5)                            &kp PAGE_UP     &kp LEFT        &kp DOWN    &kp RIGHT       &as EQUAL LS(EQUAL)    &none
-                &kp LC(C)           &kp LSHIFT      &kp GRAVE           &trans            &kp LC(LS(TAB))    &kp LC(TAB)        &none  &none       &kp PAGE_DOWN   &kp LS(N4)      &kp RA(E)   &kp LS(N3)      &kp LS(RBKT)           &none
-                &as LS(LC(V)) LC(V) &kp LCTRL       &none               &none             &kp LC(LS(P))          &trans         &none  &kp K_APP   &mo 2           &kp LALT        &trans      &trans          &trans                 &trans 
+                &kp LC(X)           &as LS(SQT) SQT &as LS(MINUS) MINUS &as LS(SEMI) SEMI &as LS(LBKT) LBKT  &kp RA(RBKT)                          &none           &none           &kp UP      &kp LS(MINUS)   &as EQUAL LS(EQUAL)   &kp LS(KP_PLUS)
+                &kp LC(C)           &kp LSHIFT      &kp LS(N1)          &kp RA(Q)         &kp LS(N6)         &kp LS(N5)                            &kp PAGE_UP     &kp LEFT        &kp DOWN    &kp RIGHT       &kp LS(RBKT)          &none
+                &as LS(LC(V)) LC(V) &kp LCTRL       &kp GRAVE           &trans            &kp LC(LS(TAB))    &kp LC(TAB)        &none  &none       &kp PAGE_DOWN   &kp LS(N4)      &kp RA(E)   &kp LS(N3)      &none                &none
+                &none               &none           &none               &none             &kp LC(LS(P))          &trans         &none  &kp K_APP   &mo 2           &kp LALT        &trans      &trans          &trans                 &trans 
                                                                                         
             >;
         };
@@ -116,9 +116,9 @@
         right_layer {
          
             bindings = <
-                &trans   &none               &as LS(N2) LS(NON_US_HASH)  &kp RA(N8)          &kp RA(N9)         &none                                   &kp KP_ASTERISK     &kp N7     &kp N8       &kp N9      &kp KP_MINUS   &kp KP_NUMLOCK
-                &trans   &kp RA(NON_US_BSLH) &kp LS(NON_US_BSLH)         &kp LS(N8)          &kp LS(N9)         &kp LS(N0)                              &kp KP_SLASH        &kp N4     &kp N5       &kp N6      &kp KP_PLUS    &kp LC(KP_PLUS)
-                &trans   &kp NON_US_BSLH     &none                       &as RA(N7) RA(MINUS) &as RA(N0) LS(N7) &none    &kp LC(FSLH) &kp LC(KP_PLUS)  &kp N0              &kp N1     &kp N2       &kp N3      &as COMMA DOT  &kp LC(FSLH)
+                &trans   &kp RA(NON_US_BSLH)               &as LS(N2) LS(NON_US_HASH)  &kp RA(N8)          &kp RA(N9)         &none                                   &kp KP_ASTERISK     &kp N7     &kp N8       &kp N9      &kp KP_MINUS   &kp KP_NUMLOCK
+                &trans   &kp NON_US_BSLH &kp LS(NON_US_BSLH)         &kp LS(N8)          &kp LS(N9)         &kp LS(N0)                              &kp KP_SLASH        &kp N4     &kp N5       &kp N6      &kp KP_PLUS    &kp LC(KP_PLUS)
+                &trans   &none     &none                       &as RA(N7) RA(MINUS) &as RA(N0) LS(N7) &none    &kp LC(FSLH) &kp LC(KP_PLUS)  &kp N0              &kp N1     &kp N2       &kp N3      &as COMMA DOT  &kp LC(FSLH)
                 &trans   &none               &none                       &none                &kp LALT          &mo 1    &none         &none           &lt 2 SPACE          &none      &kp COMMA    &kp DOT       &kp COMMA       &none
             >;
         };
