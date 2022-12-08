@@ -153,13 +153,12 @@
                 &kp ESC   &kp N1  &kp N2   &kp N3     &kp N4      &kp N5                      &kp F1      &kp F2   &kp F5     &kp F9 &kp F10  &to 0
                 &kp TAB   &kp Q   &kp W    &kp E      &kp R       &kp T                          &none       &none    &none     &none  &none    &kp ENTER 
                 &kp LSHFT &kp A   &kp S    &kp D      &kp F       &kp G    &kp J    &none        &none       &none    &none     &none   &none    &kp ENTER
-                &kp LCTRL &kp Z   &kp X    &mtg LALT C &kp SPACE  &lt 5 V   &kp K    &none   &none       &none   &kp LEFT   &kp UP &kp DOWN &kp RIGHT
+                &kp LCTRL &kp Z   &kp X    &mtg LALT C &kp SPACE  &mtg 5 V   &kp K    &none   &none       &none   &kp LEFT   &kp UP &kp DOWN &kp RIGHT
                                           
             >;
         };
 
         gaming_layer2 {
-
             bindings = <
                 &none       &kp M   &kp N   &kp O    &kp P  &none                           &none        &none   &none   &none  &none   &to 0
                 &kp J       &kp K   &kp N8  &kp L    &kp B  &none                           &none       &none   &none   &none    &none  &none
