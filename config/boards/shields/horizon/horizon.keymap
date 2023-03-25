@@ -151,9 +151,9 @@
 
             bindings = <
                 &kp ESC   &kp N1  &kp N2   &kp N3     &kp N4      &kp N5                      &kp F1      &kp F2   &kp F5     &kp F9 &kp F10  &to 0
-                &kp TAB   &kp Q   &kp W    &kp E      &kp R       &kp T                          &kp Y       &none    &none     &none  &none    &kp ENTER 
-                &kp LSHFT &kp A   &kp S    &kp D      &kp F       &kp G    &kp J    &kp U        &none       &none    &none     &none   &none    &kp ENTER
-                &kp LCTRL &kp Z   &kp X    &mtg LALT C &kp SPACE  &lt 5 V   &kp K    &none   &none       &none   &kp LEFT   &kp UP &kp DOWN &kp RIGHT
+                &kp TAB   &kp Q   &kp W    &kp E      &kp R       &kp T                          &kp Y       &none      &kp Q       &kp UP      &kp E       &kp ENTER 
+                &kp LSHFT &kp A   &kp S    &kp D      &kp F       &kp G    &kp J    &kp U        &none      &kp LSHFT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
+                &kp LCTRL &kp Z   &kp X    &mtg LALT C &kp SPACE  &lt 5 V   &kp K    &none      &none       &kp LCTRL   &none       &none       &kp LALT       &kp SPACE
                                           
             >;
         };
