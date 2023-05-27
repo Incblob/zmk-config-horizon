@@ -121,7 +121,7 @@
                 &none               &none            &as LS(MINUS) MINUS &as LS(SEMI) SEMI &as LS(LBKT) LBKT  &kp RA(RBKT)                          &none           &none           &kp UP      &kp LS(MINUS)   &none                  &kp LS(KP_PLUS)
                 &kp LC(X)           &as LS(SQT) SQT  &kp LS(N1)          &kp RA(Q)         &kp LS(N6)         &kp LS(N5)                            &kp PAGE_UP     &kp LEFT        &kp DOWN    &kp RIGHT       &as EQUAL LS(EQUAL)    &none
                 &kp LC(C)           &kp LSHIFT       &kp GRAVE           &trans            &kp LC(LS(TAB))    &kp LC(TAB)        &none  &none       &kp PAGE_DOWN   &kp LS(N4)      &kp RA(E)   &kp LS(N3)      &kp LS(RBKT)           &none
-                &as LS(LC(V)) LC(V) &kp LCTRL        &none               &none             &kp LC(LS(P))          &trans         &none  &kp K_APP   &mo 2           &kp LALT        &trans      &trans          &trans                 &trans 
+                &as LS(LC(V)) LC(V) &kp LCTRL        &kp RET              &none             &kp LC(LS(P))          &trans         &none  &kp K_APP   &mo 2           &kp LALT        &trans      &trans          &trans                 &trans 
                                                                                         
             >;
         };
@@ -153,7 +153,7 @@
                 &kp ESC   &kp N1  &kp N2   &kp N3     &kp N4      &kp N5                      &kp F1      &kp F2   &kp F5     &kp F9 &kp F10  &to 0
                 &kp TAB   &kp Q   &kp W    &kp E      &kp R       &kp T                          &kp Y       &none      &kp Q       &kp UP      &kp E       &kp ENTER 
                 &kp LSHFT &kp A   &kp S    &kp D      &kp F       &kp G    &kp J    &kp U        &none      &kp LSHFT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp ENTER
-                &kp LCTRL &kp Z   &kp X    &mtg LALT C &kp SPACE  &lt 5 V   &kp K    &none      &none       &kp LCTRL   &none       &none       &kp LALT       &kp SPACE
+                &kp LCTRL &kp Z   &kp X    &mtg LALT C &kp SPACE  &lt 5 V   &kp K    &none      &none       &kp LCTRL   &kp Z       &kp X       &mtg LALT C &kp SPACE
                                           
             >;
         };
