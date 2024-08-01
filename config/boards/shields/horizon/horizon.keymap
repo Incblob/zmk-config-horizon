@@ -67,13 +67,16 @@
             tap-ms = <60>;
             bindings = < &kp HOME &kp LS(END)>;
         };
-         paste_obsidian_link: paste_obsidian_link {
+        paste_obsidian_link: paste_obsidian_link {
             compatible = "zmk,behavior-macro";
             label = "paste_obsidian_link";
             #binding-cells = <0>;
-            wait-ms = <30>;
+            wait-ms = <80>;
             tap-ms = <60>;
-            bindings = < &kp RA(N8) &kp RIGHT &kp RIGHT &kp LS(N8) &kp RIGHT &kp LC(V) &kp RIGHT>;
+            bindings = 
+            <&kp RA(N8) &kp RIGHT &kp RIGHT &kp LS(N8) &kp RIGHT>,
+            <&kp LC(V)>,
+            <&kp RIGHT>;
         };
        
     };
