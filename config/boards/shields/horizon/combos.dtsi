@@ -24,8 +24,10 @@ combos {
 // NAV 
 //
 
-COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4, l_A, l_HD)
-COMBO_LAYER(ctl_bsb, &kp LC(BSPC), RB2 RB3, l_A, l_HD)
+COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4, l_A)
+COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4, l_HD)
+COMBO_LAYER(ctl_bsb, &kp LC(BSPC), RB2 RB3, l_A)
+COMBO_LAYER(ctl_bsb, &kp LC(BSPC), RB2 RB3, l_HD)
 COMBO_LAYER(end, &kp END, RM2 RM3, l_L)
 COMBO_LAYER(home, &kp HOME, RM1 RM2, l_L)
 
