@@ -25,7 +25,7 @@ combos {
   combo_enter { 
       bindings = <&mt LS(ENTER) ENTER>; 
       key-positions = <RB3 RB4>; 
-      layers = <l_A l_HD>; 
+      layers = <0 7>; 
       timeout-ms = <65>; 
   };
 

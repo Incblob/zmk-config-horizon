@@ -36,14 +36,13 @@
             then-layer = <l_B>;
         };
     };
-
+    
     #include "horizon_layout.dtsi"
+    #include "behaviors.dtsi"    
     #include "macros.dtsi"
     #include "combos.dtsi"
 
     #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
-
-    #include "behaviors.dtsi"
 
         keymap {
             compatible = "zmk,keymap";
