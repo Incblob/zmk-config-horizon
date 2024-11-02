@@ -43,14 +43,14 @@ behaviors {
     td_dot: tap_dance_dot {
         TD_template;
         bindings = <&mt &colon_space_cap &dot_space_cap>
-                 , <&mt AS(DOT)>
+                 , <AS(DOT)>
                  , <&kp DOT &kp DOT &kp DOT>;
     };
 
     td_comma: tap_dance_comma {
         TD_template;
         bindings = <&mt &semi_space &comma_space>
-                 , <&mt AS(COMMA)>;
+                 , <AS(COMMA)>;
     };
 
     td_r: tap_dance_r{
