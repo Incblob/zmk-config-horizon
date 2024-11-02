@@ -37,12 +37,12 @@
         };
     };
     
+    #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+
     #include "horizon_layout.dtsi"
     #include "behaviors.dtsi"    
     #include "macros.dtsi"
     #include "combos.dtsi"
-
-    #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
         keymap {
             compatible = "zmk,keymap";
