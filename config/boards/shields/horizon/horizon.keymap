@@ -24,6 +24,10 @@
     quick_tap_ms = <140>;
 };
 
+&caps_word {
+        continue-list = <UNDERSCORE MINUS BACKSPACE DELETE LEFT RIGHT LS(FSLH) FSLH>;
+    };
+
 /{
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -40,11 +44,6 @@
     #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
     #include "behaviors.dtsi"
-
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS BACKSPACE DELETE LEFT RIGHT LS(FSLH) FSLH>;
-    };
-
 
         keymap {
             compatible = "zmk,keymap";

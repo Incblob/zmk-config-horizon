@@ -1,10 +1,10 @@
 #define MODTIME 25
 
-#define COMBO_LAYER(NAME, BINDINGS, KEYPOS, ...) \
+#define COMBO_LAYER(NAME, BINDINGS, KEYPOS, LAYER) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <__VA_ARGS__>; \
+    layers = <LAYER>; \
     timeout-ms = <MODTIME>; \
 };
 
