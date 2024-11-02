@@ -1,0 +1,123 @@
+#define MACRO_WAIT 50
+#define MACRO_TAP 40
+
+
+macros {
+    ZMK_MACRO(line_sel,
+        wait-ms = <MACRO_WAIT>;
+        tap-ms = <MACRO_TAP>;
+        bindings = < &kp HOME &kp LS(END)>;
+    )
+    ZMK_MACRO(obs_link,
+        wait-ms = <80>;
+        tap-ms = <MACRO_TAP>;
+            bindings = 
+            <&kp RA(N8) &kp RIGHT &kp RIGHT &kp LS(N8)>,
+            <&kp LC(V)>,
+            <&kp RIGHT>;
+    )
+
+// Formatting/ whitespace
+    ZMK_MACRO(comma_space,
+        wait-ms = <MACRO_WAIT>;
+        tap-ms = <MACRO_TAP>;
+        bindings = < &kp COMMA &kp SPACE>;
+    )
+    ZMK_MACRO(semi_space,
+        wait-ms = <MACRO_WAIT>;
+        tap-ms = <MACRO_TAP>;
+        bindings = < &kp LS(COMMA) &kp SPACE>;
+    )
+    ZMK_MACRO(dot_space_cap,
+        wait-ms = <MACRO_WAIT>;
+        tap-ms = <MACRO_TAP>;
+        bindings = < &kp DOT &kp SPACE &sk LSHIFT>;
+    )
+    ZMK_MACRO(colon_space_cap,
+        wait-ms = <MACRO_WAIT>;
+        tap-ms = <MACRO_TAP>;
+        bindings = < &kp LS(DOT) &kp SPACE &sk LSHIFT>;
+    )
+
+
+// Alphas
+    ZMK_MACRO(macro_QU, 
+        tap-ms = <MACRO_TAP>; 
+        bindings = <&macro_tap &kp Q> 
+                , <&macro_release &kp LSHFT> 
+                , <&macro_release &kp RSHFT> 
+                , <&macro_tap &kp U> ; 
+        )
+
+// Digraphs
+
+    ZMK_MACRO(macro_Th,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp T>
+            , <&macro_release &kp LSHFT>
+            , <&macro_release &kp RSHFT>
+            , <&macro_tap &kp H>;
+        )
+    ZMK_MACRO(macro_tion,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&kp T &kp I &kp O &kp N>;
+        )
+    ZMK_MACRO(macro_Ch,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp C>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp H>;
+        )
+    ZMK_MACRO(macro_Wh,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp W>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp H>;
+        )
+    ZMK_MACRO(macro_Sh,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp S>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp H>;
+        )
+    ZMK_MACRO(macro_sion,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&kp S &kp I &kp O &kp N>;
+        )
+    ZMK_MACRO(macro_Gh,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp G>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp H>;
+        )
+    ZMK_MACRO(macro_ght,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&kp G &kp H &kp T>;
+        )
+    ZMK_MACRO(macro_Ph,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp P>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp H>;
+        )
+
+    ZMK_MACRO(macro_Sch,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp S>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp C &kp H>;
+        )
+    ZMK_MACRO(macro_Tch,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp T>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp C &kp H>;
+        )
+};

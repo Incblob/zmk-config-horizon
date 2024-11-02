@@ -1,0 +1,89 @@
+#define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
+
+#define     my_hrm_config \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            flavor = "balanced"; \
+            hold-trigger-on-release; \
+            tapping-term-ms = <my_tapping_term>; \
+            quick-tap-ms = <my_quick_tapping_term>
+
+#define     my_lk_config \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            tapping-term-ms = <my_tapping_term>; \
+            flavor = "tap-preferred"
+
+
+behaviors {
+    as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            #binding-cells = <2>;
+            tapping_term_ms = <180>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>; 
+        };
+
+    mtg: mod_tap_game {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOLD_TAP_GAME";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <400>;
+        quick-tap-ms = <200>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <1>;    // <---[[the W key]]
+    };
+    //
+    // TAP DANCE
+    //
+    td_dot: tap_dance_dot {
+        TD_template;
+        bindings = <&mt &colon_space_cap &dot_space_cap>
+                 , <&mt AS(DOT)>
+                 , <&kp DOT &kp DOT &kp DOT>;
+    };
+
+    td_comma: tap_dance_comma {
+        TD_template;
+        bindings = <&mt &semi_space &comma_space>
+                 , <&mt AS(COMMA)>;
+    };
+
+    td_r: tap_dance_r{
+        TD_template;
+        bindings = <&lt l_R R>
+                 , <&kp LS(R)>;
+    };
+
+    td_qu: td_qu {
+            TD_template;
+            bindings = <AS(&macro_QU)>
+                    , <AS(Q)>;
+        };
+
+
+    //
+    // Digraphs
+    //
+    lk_th: lk_th { // Th on tap, tion on "linger"
+        my_lk_config;
+        bindings = <&t_tion>, <&t_Th>;
+    };
+    lk_sh: lk_sh { // Sh on tap, sion on "linger"
+        my_lk_config;
+        bindings = <&t_sion>, <&t_Sh>;
+    };
+    lk_gh: lk_gh { // Gh on tap, Ght on "linger"
+        my_lk_config;
+        bindings = <&t_ght>, <&t_Gh>;
+    };
+
+    //
+    // linger keys
+    //
+
+};

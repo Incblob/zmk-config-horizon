@@ -1,0 +1,47 @@
+#define MODTIME 25
+
+#define COMBO_LAYER(NAME, BINDINGS, KEYPOS, ...) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <__VA_ARGS__>; \
+    timeout-ms = <MODTIME>; \
+};
+
+#define ROLL_COMBO 200
+#define COMBO_ROLL(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+    timeout-ms = <ROLL_COMBO>; \
+};
+
+
+combos {
+    compatible = "zmk,combos";
+// 
+// NAV 
+//
+
+COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4, l_A, l_HD)
+COMBO_LAYER(ctl_bsb, &kp LC(BSPC), RB2 RB3, l_A, l_HD)
+COMBO_LAYER(end, &kp END, RM2 RM3, l_L)
+COMBO_LAYER(home, &kp HOME, RM1 RM2, l_L)
+
+//
+// H Digraphs
+//
+COMBO_LAYER(sch, &macro_Sch,     LB1  LM2 LM3, l_HD) // Sch
+COMBO_LAYER(tch, &macro_Tch,     LM2  LM3 LM4, l_HD) // Tch
+COMBO_LAYER(th,  &lk_th H T,     LM3  LM4,      l_HD) // Th/tion
+COMBO_LAYER(ch,  &macro_Ch,      LM2  LM3,      l_HD) // Ch
+COMBO_LAYER(wh,  &macro_Wh,      LT2  LT3,      l_HD) // Wh
+COMBO_LAYER(sh,  &lk_sh H S,     LB1  LM2,      l_HD) // Sh/sion
+COMBO_LAYER(gh,  &lk_gh H G,     LT3  LT4,      l_HD) // Gh/ght
+COMBO_LAYER(ph,  &macro_Ph,      LB2  LB3,      l_HD) // Ph
+
+// QU
+
+
+};
