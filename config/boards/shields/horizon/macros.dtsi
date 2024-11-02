@@ -1,7 +1,6 @@
 #define MACRO_WAIT 50
 #define MACRO_TAP 40
 
-
 macros {
     ZMK_MACRO(line_sel,
         wait-ms = <MACRO_WAIT>;
