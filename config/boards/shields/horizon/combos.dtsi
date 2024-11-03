@@ -6,7 +6,6 @@
     timeout-ms = <65>; \
 };
 
-#define ROLL_COMBO 200
 #define COMBO_ROLL(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
@@ -22,12 +21,12 @@ combos {
 // NAV 
 //
 
-  // combo_enter { 
-  //     bindings = <&mt LS(ENTER) ENTER>; 
-  //     key-positions = <RB3 RB4>; 
-  //     layers = <0 7>; 
-  //     timeout-ms = <65>; 
-  // };
+combo_enter_test { 
+    bindings = <&mt LS(ENTER) ENTER>; 
+    key-positions = <RB3 RB4>; 
+    layers = <l_A>; 
+    timeout-ms = <65>; 
+};
 
 COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4, l_A)
 COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4, l_HD)
