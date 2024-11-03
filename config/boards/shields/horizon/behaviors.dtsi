@@ -45,7 +45,7 @@ behaviors {
     //
     td_dot: td_dot {
         TD_template;
-        bindings = <&mt_dot>
+        bindings = <&mt &colon_space_cap &dot_space_cap>
                  , <AS(DOT)>
                  , <&dotdotdot>;
     };
