@@ -69,7 +69,8 @@ behaviors {
 
     td_qu: td_qu {
             TD_template;
-            bindings = <&mt macro_QU &macro_QU_cap>, <AS(Q)>;
+            bindings = <&mt &macro_QU &macro_QU_cap>
+                        , <AS(Q)>;
         };
     
     td_qu_test: td_qu_test {
