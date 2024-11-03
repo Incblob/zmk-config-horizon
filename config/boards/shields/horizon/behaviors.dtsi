@@ -68,9 +68,9 @@ behaviors {
                     , <AS(Q)>;
         };
 
-    shift_qu: shift_macro {
+    shift_qu: shift_qu_macro {
         my_lk_config;
-        bindings = <&sk LSHIFT &macro_QU>, <&macro_QU>;
+        bindings = <&macro_QU_cap>, <&macro_QU>;
     };
 
     //
