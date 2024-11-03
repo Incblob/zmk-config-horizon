@@ -1,7 +1,7 @@
 
 #define my_tapping_term 170
 
-#define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
+#define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <250>
 
 #define     my_hrm_config \
             compatible = "zmk,behavior-hold-tap"; \
@@ -45,7 +45,7 @@ behaviors {
     //
     td_dot: td_dot {
         TD_template;
-        bindings = <&mt &colon_space_cap &dot_space_cap>
+        bindings = <&mt_dot DOT DOT>
                  , <AS(DOT)>
                  , <&dotdotdot>;
     };
@@ -56,10 +56,14 @@ behaviors {
         };
 
     td_comma: td_comma {
-        TD_template;
-        bindings = <&mt &semi_space &comma_space>
+        TD_templateq
+        bindings = <&mt_coma COMMA COMMA>
                  , <AS(COMMA)>;
     };
+    mt_comma: mt_coma {
+            my_lk_config;
+            bindings = <& &semi_space>, <&comma_space>;
+        };
 
     td_r: td_r{
         TD_template;
@@ -69,11 +73,11 @@ behaviors {
 
     td_qu: td_qu {
             TD_template;
-            bindings = <&mt &macro_QU &macro_QU_cap>
-                        , <AS(Q)>;
+            bindings = <&mt_qu Q U>
+                    , <AS(Q)>;
         };
     
-    td_qu_test: td_qu_test {
+    mt_qu: mt_qu {
             my_lk_config;
             bindings = <&macro_QU>, <&macro_QU_cap>;
         };
