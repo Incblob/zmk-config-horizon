@@ -56,7 +56,7 @@ behaviors {
         };
 
     td_comma: td_comma {
-        TD_templateq
+        TD_template;
         bindings = <&mt_coma COMMA COMMA>
                  , <AS(COMMA)>;
     };
