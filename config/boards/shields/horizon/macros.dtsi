@@ -37,7 +37,6 @@ macros {
         tap-ms = <MACRO_TAP>;
         bindings = < &kp LS(DOT) &kp SPACE &sk LSHIFT>;
     )
-     )
     ZMK_MACRO(dotdotdot,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP>;
