@@ -70,7 +70,7 @@ behaviors {
 
     shift_qu: shift_macro {
         my_lk_config;
-        bindings = <LS(&macro_QU)>, <&macro_QU>;
+        bindings = <&sk LSHIFT &macro_QU>, <&macro_QU>;
     }
 
     //
