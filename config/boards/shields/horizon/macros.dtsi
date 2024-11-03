@@ -2,7 +2,7 @@
 #define MACRO_TAP 40
 
 macros {
-    ZMK_MACRO(line_sel,
+    ZMK_MACRO(line_select,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP>;
         bindings = < &kp HOME &kp LS(END)>;

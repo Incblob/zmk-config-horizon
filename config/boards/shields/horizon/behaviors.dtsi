@@ -43,20 +43,20 @@ behaviors {
     //
     // TAP DANCE
     //
-    td_dot: tap_dance_dot {
+    td_dot: td_dot {
         TD_template;
         bindings = <&mt &colon_space_cap &dot_space_cap>
                  , <AS(DOT)>
                  , <&kp DOT &kp DOT &kp DOT>;
     };
 
-    td_comma: tap_dance_comma {
+    td_comma: td_comma {
         TD_template;
         bindings = <&mt &semi_space &comma_space>
                  , <AS(COMMA)>;
     };
 
-    td_r: tap_dance_r{
+    td_r: td_r{
         TD_template;
         bindings = <&lt l_R R>
                  , <&kp LS(R)>;
