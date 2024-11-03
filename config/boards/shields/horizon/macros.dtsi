@@ -1,5 +1,6 @@
 #define MACRO_WAIT 35
-#define MACRO_TAP 35
+#define MACRO_TAP 15
+#define MACRO_TAP_Q 10
 
 macros {
     ZMK_MACRO(line_select,
@@ -29,12 +30,12 @@ macros {
     )
     ZMK_MACRO(dot_space_cap,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP>;
+        tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp DOT &kp SPACE &sk LSHIFT>;
     )
     ZMK_MACRO(colon_space_cap,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP>;
+        tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp LS(DOT) &kp SPACE &sk LSHIFT>;
     )
     ZMK_MACRO(dotdotdot,
