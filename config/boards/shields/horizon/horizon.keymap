@@ -25,6 +25,11 @@
     quick_tap_ms = <140>;
 };
 
+&sk {
+    release-after-ms = <1000>;
+    quick-release;
+};
+
 &caps_word {
         continue-list = <UNDERSCORE MINUS BACKSPACE DELETE LEFT RIGHT LS(FSLH) FSLH>;
     };

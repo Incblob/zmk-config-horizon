@@ -30,12 +30,12 @@ macros {
     )
     ZMK_MACRO(dot_space_cap,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP_Q>;
+        tap-ms = <5>;
         bindings = < &kp DOT &kp SPACE &sk LSHIFT>;
     )
     ZMK_MACRO(colon_space_cap,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP_Q>;
+        tap-ms = <5>;
         bindings = < &kp LS(DOT) &kp SPACE &sk LSHIFT>;
     )
     ZMK_MACRO(dotdotdot,

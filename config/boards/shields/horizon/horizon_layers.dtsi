@@ -41,10 +41,10 @@ handsdown_code {
 left_layer {
   
     bindings = <
-        &none               &none         AS(MINUS)   AS(SEMI)   AS(LBKT)           &kp RA(RBKT)                     &none           &none           &kp UP      &kp LS(MINUS)   &none                  &kp LS(KP_PLUS)
-        &kp LC(X)           AS(SQT)       &kp LS(N1)  &kp RA(Q)  &kp LS(N6)         &kp LS(N5)                       &kp PAGE_UP     &kp LEFT        &kp DOWN    &kp RIGHT       &as EQUAL LS(EQUAL)    &none
-        &kp LC(C)           &kp LSHIFT    &kp GRAVE   &trans     &kp LC(LS(TAB))    &kp LC(TAB)   &none  &none       &kp PAGE_DOWN   &kp LS(N4)      &kp RA(E)   &kp LS(N3)      &kp LS(RBKT)           &none
-        &as LS(LC(V)) LC(V) &kp LCTRL     &kp RET     &none      &kp LC(LS(P))          &trans    &none  &kp K_APP   &mo l_R         &kp LALT        &trans      &trans          &trans                 &trans 
+        &none               &none      AS(MINUS)   AS(SEMI)   AS(LBKT)        &kp RA(RBKT)                  &none          &none      &kp UP    &kp LS(MINUS) &none               &kp LS(KP_PLUS)
+        &kp LC(X)           AS(SQT)    &kp LS(N1)  &kp RA(Q)  &kp LS(N6)      &kp LS(N5)                    &kp PAGE_UP    &kp LEFT   &kp DOWN  &kp RIGHT     &as EQUAL LS(EQUAL) &none
+        &kp LC(C)           &kp LSHIFT &kp GRAVE   &trans     &kp LC(LS(TAB)) &kp LC(TAB)  &none  &none     &kp PAGE_DOWN  &kp LS(N4) &kp RA(E) &kp LS(N3)    &kp LS(RBKT)        &none
+        &as LS(LC(V)) LC(V) &kp LCTRL  &kp RET     &none      &kp LC(LS(P))   &trans       &none  &kp K_APP &mo l_R        &kp LALT   &trans    &trans        &trans              &trans 
                                                                                 
     >;
 };
