@@ -57,10 +57,10 @@ behaviors {
 
     td_comma: td_comma {
         TD_template;
-        bindings = <&mt_coma COMMA COMMA>
+        bindings = <&mt_comma COMMA COMMA>
                  , <AS(COMMA)>;
     };
-    mt_comma: mt_coma {
+    mt_comma: mt_comma {
             my_lk_config;
             bindings = <&semi_space>, <&comma_space>;
         };
