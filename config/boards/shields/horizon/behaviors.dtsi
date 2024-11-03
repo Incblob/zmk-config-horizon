@@ -62,7 +62,7 @@ behaviors {
     };
     mt_comma: mt_coma {
             my_lk_config;
-            bindings = <& &semi_space>, <&comma_space>;
+            bindings = <&semi_space>, <&comma_space>;
         };
 
     td_r: td_r{
