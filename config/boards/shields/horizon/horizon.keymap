@@ -11,13 +11,14 @@
 
 #define l_ALPHA 0
 #define l_CODE 1
-#define l_L  2
-#define l_R  3
-#define l_B  4
-#define l_G1 5
-#define l_G2 6
-#define l_HD 7
-#define l_HD_CODE 8
+#define l_HD 2
+#define l_HD_CODE 3
+#define l_L  4
+#define l_R  5
+#define l_B  6
+#define l_G1 7
+#define l_G2 8
+
 
 &mt {
     tapping-term-ms = <145>;

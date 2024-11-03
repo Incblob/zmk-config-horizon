@@ -4,7 +4,7 @@ default_layer {
     bindings = <
         &kp ESC       AS(F12)   AS(W)      AS(F)         AS(P)         AS(B)                                    AS(J)          AS(L)      AS(U)      AS(Z)     &as LC(G) LC(F)   &kp LC(HOME)
         &kp LSHFT     AS(Q)     AS(R)      AS(S)         AS(T)         AS(G)                                    AS(M)          AS(N)      AS(E)      AS(I)     AS(NON_US_HASH)   &kp LC(END)
-        AS(TAB)       AS(A)     AS(X)      AS(C)         AS(D)         AS(V)      &kp LS(LC(LALT))  &caps_word  AS(K)          AS(H)      &comma_space  &td_dot   AS(O)             AS(RET)
+        AS(TAB)       AS(A)     AS(X)      AS(C)         AS(D)         AS(V)      &kp LS(LC(LALT))  &caps_word  AS(K)          AS(H)      &td_comma  &td_dot   AS(O)             AS(RET)
         &kp LCTRL     AS(Y)     &kp LGUI   &kp LG(LS(S)) &mt LALT ESC  &lt l_L SPACE  &kp BSPC     &kp DELETE   &lt l_R SPACE  AS(FSLH)   &kp LEFT  &kp UP    &kp DOWN          &kp RIGHT
     >;
 };
