@@ -64,14 +64,13 @@ behaviors {
 
     td_qu: td_qu {
             TD_template;
-            bindings = <&shift_qu>
-                    , <AS(Q)>;
+            bindings = <&mt &macro_QU_cap &macro_QU>, <AS(Q)>;
         };
 
-    shift_qu: shift_qu_macro {
-        my_lk_config;
-        bindings = <&macro_QU_cap>, <&macro_QU>;
-    };
+    // shift_qu: shift_qu_macro {
+    //     my_lk_config;
+    //     bindings = <&macro_QU_cap>, <&macro_QU>;
+    // };
 
     //
     // Digraphs
