@@ -1,6 +1,7 @@
-#define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
 
 #define my_tapping_term 170
+
+#define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <my_tapping_term>
 
 #define     my_hrm_config \
             compatible = "zmk,behavior-hold-tap"; \
