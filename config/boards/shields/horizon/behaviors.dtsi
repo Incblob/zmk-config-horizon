@@ -61,7 +61,7 @@ behaviors {
 
     td_qu: td_qu {
             TD_template;
-            bindings = <AS(&macro_QU)>
+            bindings = <&as LS(&macro_QU) &macro_QU>
                     , <AS(Q)>;
         };
 
