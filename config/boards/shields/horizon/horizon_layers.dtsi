@@ -2,13 +2,12 @@
 default_layer {
 
     bindings = <
-        &kp ESC       AS(F12)  AS(W)      AS(F)         AS(P)         AS(B)                                    AS(J)          AS(L)      AS(U)      AS(Z)     &as LC(G) LC(F)   &kp LC(HOME)
-        &kp LSHFT     AS(Q)            AS(R)      AS(S)         AS(T)         AS(G)                                    AS(M)          AS(N)      AS(E)      AS(I)     AS(NON_US_HASH)   &kp LC(END)
-        AS(TAB)       AS(A)            AS(X)      AS(C)         AS(D)         AS(V)      &kp LS(LC(LALT))  &caps_word  AS(K)          AS(H)      &td_comma  &td_dot   AS(O)             AS(RET)
-        &kp LCTRL     AS(Y)            &kp LGUI   &kp LG(LS(S)) &mt LALT ESC  &lt l_L SPACE  &kp BSPC     &kp DELETE   &lt l_R SPACE  AS(FSLH)   &kp LEFT  &kp UP    &kp DOWN          &kp RIGHT
+        &kp ESC       AS(F12)   AS(W)      AS(F)         AS(P)         AS(B)                                    AS(J)          AS(L)      AS(U)      AS(Z)     &as LC(G) LC(F)   &kp LC(HOME)
+        &kp LSHFT     AS(Q)     AS(R)      AS(S)         AS(T)         AS(G)                                    AS(M)          AS(N)      AS(E)      AS(I)     AS(NON_US_HASH)   &kp LC(END)
+        AS(TAB)       AS(A)     AS(X)      AS(C)         AS(D)         AS(V)      &kp LS(LC(LALT))  &caps_word  AS(K)          AS(H)      &comma_space  &td_dot   AS(O)             AS(RET)
+        &kp LCTRL     AS(Y)     &kp LGUI   &kp LG(LS(S)) &mt LALT ESC  &lt l_L SPACE  &kp BSPC     &kp DELETE   &lt l_R SPACE  AS(FSLH)   &kp LEFT  &kp UP    &kp DOWN          &kp RIGHT
     >;
 };
-
 
 coding_layer {
 
@@ -17,6 +16,25 @@ coding_layer {
         &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  AS(COMMA)  AS(DOT) &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans
+    >;
+};
+
+ handsdown {
+
+    bindings = <    
+        &kp ESC       AS(F12)  AS(W)      AS(M)         AS(G)         AS(J)                                              &td_qu_test           &td_dot       &td_qu   AS(Y)     &as LC(G) LC(F)   &kp LC(HOME)
+        &kp LSHFT     AS(X)    AS(C)      AS(N)         AS(T)         AS(K)                                              &td_comma       AS(A)         AS(E)    AS(I)     AS(F)     &kp LC(END)
+        AS(TAB)       AS(S)    AS(P)      AS(L)         AS(D)         AS(V)         &kp LS(LC(LALT))  &caps_word         AS(NON_US_HASH) AS(U)         AS(O)     AS(Z)   AS(H)             AS(RET)
+        &kp LCTRL     AS(B)    &kp LGUI   &kp LG(LS(S)) &mt LALT ESC  &lt l_L SPACE   &kp BSPC       &mt LSHIFT DELETE   &td_r     AS(FSLH)   &kp LEFT      &kp UP    &kp DOWN          &kp RIGHT
+    >;
+};
+
+handsdown_code {
+       bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans                  &trans     AS(DOT) &trans &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                  AS(COMMA)  &trans  &trans &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans &trans  &trans  &trans
     >;
 };
 
@@ -74,12 +92,3 @@ gaming_layer2 {
     >;
 }; 
 
- handsdown {
-
-    bindings = <    
-        &kp ESC       AS(F12)  AS(W)      AS(M)         AS(G)         AS(J)                                              &none           &td_dot       &td_qu   AS(Z)     &as LC(G) LC(F)   &kp LC(HOME)
-        &kp LSHFT     AS(X)    AS(C)      AS(N)         AS(T)         AS(K)                                              &td_comma       AS(A)         AS(E)    AS(I)     AS(F)     &kp LC(END)
-        AS(TAB)       AS(S)    AS(P)      AS(L)         AS(D)         AS(V)         &kp LS(LC(LALT))  &caps_word         AS(NON_US_HASH) AS(U)         AS(O)     AS(Y)   AS(H)             AS(RET)
-        &kp LCTRL     AS(B)    &kp LGUI   &kp LG(LS(S)) &mt LALT ESC  &lt l_L SPACE   &kp BSPC       &mt LSHIFT DELETE   &td_r     AS(FSLH)   &kp LEFT      &kp UP    &kp DOWN          &kp RIGHT
-    >;
-};
