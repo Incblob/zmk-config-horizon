@@ -48,7 +48,7 @@ both_layer {
         &kp F6     &kp F7    &kp F8         &kp F9  &kp K_PP       &kp K_VOL_UP                                 &bt BT_CLR  &line_select        &kp LC(HOME)    &kp LS(END)         &to l_ALPHA        &to l_CODE
         &none      &none     &mt LC(F2) F2  &kp F3  &kp F4        &kp K_VOL_DN                                   &out OUT_TOG   &kp LS(LC(LEFT))    &kp LC(END)     &kp LS(LC(RIGHT))   &none           &to l_HD
         &none      &kp F1    &none          &none   &kp LA(LEFT)  &kp LA(RIGHT) &to l_G1       &kp CAPSLOCK   &none       &bt BT_SEL 0        &bt BT_SEL 1    &bt BT_SEL 2        &bt BT_SEL 3    &bt BT_SEL 4
-        &obs_link  &none     &none          &none   &none         &trans        &sys_reset  &bootload er    &trans      &none               &none           &none               &none           &none
+        &obs_link  &none     &none          &none   &none         &trans        &sys_reset     &bootloader    &trans      &none               &none           &none               &none           &none
                                                            
     >;
 };
