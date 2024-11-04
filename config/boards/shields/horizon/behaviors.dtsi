@@ -33,7 +33,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "R_LAYER";
             #binding-cells = <2>;
-            tapping_term_ms = <60>;
+            tapping_term_ms = <40>;
             // quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>; 
@@ -89,7 +89,7 @@ behaviors {
     td_r: td_r{
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
-        tapping-term-ms = <175>;
+        tapping-term-ms = <185>;
         bindings = <&lt_r l_L R>
                  , <&kp LS(R)>;
     };
