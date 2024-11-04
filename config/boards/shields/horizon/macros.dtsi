@@ -1,4 +1,4 @@
-#define MACRO_WAIT 35
+#define MACRO_WAIT 15
 #define MACRO_TAP 15
 #define MACRO_TAP_Q 10
 
@@ -17,30 +17,42 @@ macros {
             <&kp RIGHT>;
     )
 
+    ZMK_MACRO(test_sk,
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&sk LSHIFT>;
+    )
+    ZMK_MACRO(release_sk,
+        wait-ms = <20>;
+        tap-ms = <20>;
+        bindings = <&macro_release &kp LSHIFT>;
+    )
+
+
 // Formatting/ whitespace
     ZMK_MACRO(comma_space,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP>;
+        tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp COMMA &kp SPACE>;
     )
     ZMK_MACRO(semi_space,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP>;
+        tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp LS(COMMA) &kp SPACE>;
     )
     ZMK_MACRO(dot_space_cap,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <5>;
+        tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp DOT &kp SPACE &sk LSHIFT>;
     )
     ZMK_MACRO(colon_space_cap,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <5>;
+        tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp LS(DOT) &kp SPACE &sk LSHIFT>;
     )
     ZMK_MACRO(dotdotdot,
         wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP>;
+        tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp DOT &kp DOT &kp DOT>;
     )
 
