@@ -17,18 +17,6 @@ macros {
             <&kp RIGHT>;
     )
 
-    ZMK_MACRO(test_sk,
-        wait-ms = <20>;
-        tap-ms = <20>;
-        bindings = <&kp SPACE &sk LSHIFT>;
-    )
-    ZMK_MACRO(release_sk,
-        wait-ms = <20>;
-        tap-ms = <20>;
-        bindings = <&macro_release &kp LSHIFT>;
-    )
-
-
 // Formatting/ whitespace
     ZMK_MACRO(comma_space,
         wait-ms = <MACRO_WAIT>;
