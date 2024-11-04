@@ -3,7 +3,7 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = LAYERS; \
-    timeout-ms = <35>; \
+    timeout-ms = <25>; \
 };
 
 // #define COMBO_ROLL(NAME, BINDINGS, KEYPOS, LAYERS) \
@@ -32,6 +32,7 @@ COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4,  <l_ALPHA l_CODE l_L l_HD>)
 COMBO_LAYER(ctl_bsb, &kp LC(BSPC), RB2 RB3,       <l_ALPHA l_CODE l_L l_HD>)
 COMBO_LAYER(end, &kp END, RM2 RM3,                <l_ALPHA l_CODE l_L l_HD>)
 COMBO_LAYER(home, &kp HOME, RM1 RM2,              <l_ALPHA l_CODE l_L l_HD>)
+COMBO_LAYER(both, &mo L_B, LH5 RH1,               <l_ALPHA l_CODE l_HD l_HD_CODE>)
 
 //
 // H Digraphs
