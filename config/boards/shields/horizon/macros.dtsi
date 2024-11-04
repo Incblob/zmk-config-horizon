@@ -1,6 +1,6 @@
-#define MACRO_WAIT 15
-#define MACRO_TAP 10
-#define MACRO_TAP_Q 5
+#define MACRO_WAIT 5
+#define MACRO_TAP 5
+#define MACRO_TAP_Q 3
 
 macros {
     ZMK_MACRO(line_select,

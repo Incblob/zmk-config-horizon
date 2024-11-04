@@ -65,12 +65,6 @@ behaviors {
             bindings = <&semi_space>, <&comma_space>;
         };
 
-    td_r: td_r{
-        TD_template;
-        bindings = <&lt l_R R>
-                 , <&kp LS(R)>;
-    };
-
     td_qu: td_qu {
             TD_template;
             bindings = <&mt_qu Q U>
@@ -81,6 +75,15 @@ behaviors {
             my_lk_config;
             bindings = <&macro_QU_cap>, <&macro_QU>;
         };
+// ----- LAYER
+    td_r: td_r{
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <100>;
+        bindings = <&lt l_L R>
+                 , <&kp LS(R)>;
+    };
+
     // shift_qu: shift_qu_macro {
     //     my_lk_config;
     //     bindings = <&macro_QU_cap>, <&macro_QU>;

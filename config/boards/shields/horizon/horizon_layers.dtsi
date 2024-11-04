@@ -22,7 +22,7 @@ coding_layer {
 &kp ESC   AS(F12) AS(W)    AS(M)         AS(G)        AS(J)                                    &td_qu          &td_dot       &td_qu   AS(Y)   &as LC(G) LC(F) &kp LC(HOME)
 &kp LSHFT AS(X)   AS(C)    AS(N)         AS(T)        AS(K)                                    &td_comma       AS(A)         AS(E)    AS(I)   AS(F)           &kp LC(END)
 AS(TAB)   AS(S)   AS(P)    AS(L)         AS(D)        AS(V)   &kp LS(LC(LALT))  &caps_word     AS(NON_US_HASH) AS(U)         AS(O)   AS(Z)   AS(H)           AS(RET)
-&kp LCTRL AS(B)   &kp LGUI &kp LG(LS(S)) &mt LALT ESC &lt l_L SPACE &kp BSPC   &mt LSHIFT DELETE &td_r         AS(FSLH)   &kp LEFT    &kp UP  &kp DOWN        &kp RIGHT
+&kp LCTRL AS(B)   &kp LGUI &kp LG(LS(S)) &mt LALT ESC &td_r  &kp BSPC   &mt LSHIFT DELETE      &lt l_R SPACE  AS(FSLH)   &kp LEFT    &kp UP  &kp DOWN        &kp RIGHT
     >;
 };
 

@@ -3,7 +3,7 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = LAYERS; \
-    timeout-ms = <55>; \
+    timeout-ms = <35>; \
 };
 
 // #define COMBO_ROLL(NAME, BINDINGS, KEYPOS, LAYERS) \
