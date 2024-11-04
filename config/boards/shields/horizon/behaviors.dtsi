@@ -86,13 +86,13 @@ behaviors {
             bindings = <&macro_QU_cap>, <&macro_QU>;
         };
 // ----- LAYER
-    td_r: td_r{
-        compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <0>;
-        tapping-term-ms = <185>;
-        bindings = <&lt_r l_L R>
-                 , <&kp LS(R)>;
-    };
+    // td_r: td_r{
+    //     compatible = "zmk,behavior-tap-dance";
+    //     #binding-cells = <0>;
+    //     tapping-term-ms = <185>;
+    //     bindings = <&lt_r l_L R>
+    //              , <&kp LS(R)>;
+    // };
 
     // shift_qu: shift_qu_macro {
     //     my_lk_config;

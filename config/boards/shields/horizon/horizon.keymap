@@ -32,7 +32,7 @@
 };
 
 &lt {
-    tapping-term-ms = <170>;
+    tapping-term-ms = <100>;
 };
 
 
