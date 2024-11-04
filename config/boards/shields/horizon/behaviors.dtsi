@@ -89,7 +89,7 @@ behaviors {
     td_r: td_r{
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
-        tapping-term-ms = <100>;
+        tapping-term-ms = <150>;
         bindings = <&lt_r l_L R>
                  , <&kp LS(R)>;
     };
