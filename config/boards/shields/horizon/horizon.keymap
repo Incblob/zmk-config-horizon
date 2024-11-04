@@ -31,9 +31,9 @@
     lazy;
 };
 
-// &lt {
-//     tapping-term-ms = <150>;
-// };
+&lt {
+    tapping-term-ms = <170>;
+};
 
 
 &caps_word {
