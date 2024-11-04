@@ -20,7 +20,7 @@ macros {
     ZMK_MACRO(test_sk,
         wait-ms = <20>;
         tap-ms = <20>;
-        bindings = <&sk LSHIFT>;
+        bindings = <&kp SPACE &sk LSHIFT>;
     )
     ZMK_MACRO(release_sk,
         wait-ms = <20>;
