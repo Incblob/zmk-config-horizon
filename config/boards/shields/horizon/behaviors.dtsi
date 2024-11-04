@@ -1,5 +1,5 @@
 
-#define my_tapping_term 160
+#define my_tapping_term 100
 
 #define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
 
@@ -34,7 +34,7 @@ behaviors {
             label = "R_LAYER";
             #binding-cells = <2>;
             tapping_term_ms = <160>;
-            quick_tap_ms = <0>;
+            // quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>; 
         };
