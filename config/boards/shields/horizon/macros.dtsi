@@ -1,6 +1,6 @@
-#define MACRO_WAIT 1
-#define MACRO_TAP 2
-#define MACRO_TAP_Q 2
+#define MACRO_WAIT 0
+#define MACRO_TAP 1
+#define MACRO_TAP_Q 1
 
 macros {
     ZMK_MACRO(line_select,
@@ -138,5 +138,12 @@ macros {
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp RSHFT>
                     , <&macro_tap &kp C &kp H>;
+        )
+    ZMK_MACRO(macro_ing,
+        tap-ms = <MACRO_TAP>;
+        bindings = <&macro_tap &kp I>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp RSHFT>
+                    , <&macro_tap &kp N &kp G>;
         )
 };
