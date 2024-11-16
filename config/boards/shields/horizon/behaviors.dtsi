@@ -1,5 +1,5 @@
 
-#define my_tapping_term 100
+#define my_tapping_term 125
 
 #define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
 
@@ -27,6 +27,16 @@ behaviors {
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>; 
+        };
+
+    ss: shift_sticky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_sticky";
+            #binding-cells = <2>;
+            tapping_term_ms = <170>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&sk>; 
         };
 
     lt_r: lt_r {

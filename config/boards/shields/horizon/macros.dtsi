@@ -12,7 +12,7 @@ macros {
         wait-ms = <80>;
         tap-ms = <MACRO_TAP>;
             bindings = 
-            <&kp RA(N8) &kp RIGHT &kp RIGHT &kp LS(N8)>,
+            <&kp RA(N8) &kp RIGHT &kp LS(N8)>,
             <&kp LC(V)>,
             <&kp RIGHT>;
     )
