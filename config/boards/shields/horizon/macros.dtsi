@@ -29,16 +29,16 @@ macros {
         ZMK_MACRO(NAME, \
         wait-ms = <MACRO_WAIT>; \
         tap-ms = <MACRO_TAP_Q>; \
-        bindings = < &kp KEY &kp SPACE>; \
-    ) \
+        bindings = < &kp KEY &kp SPACE>;)
     SPACE_MACRO(comma_space, COMMA) 
     SPACE_MACRO(semi_space, LS(COMMA))
+    SPACE_MACRO(colon_space, LS(DOT))
+
     ZMK_MACRO(dot_space_cap,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp DOT &kp SPACE &sk LSHIFT>;
     )
-    SPACE_MACRO(colon_space, LS(DOT))
     ZMK_MACRO(dotdotdot,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP_Q>;
