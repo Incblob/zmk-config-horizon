@@ -1,5 +1,5 @@
 
-#define my_tapping_term 125
+#define my_tapping_term 150
 
 #define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
 
@@ -72,7 +72,7 @@ behaviors {
     
     mt_dot: mt_dot {
             my_lk_config;
-            bindings = <&colon_space_cap>, <&dot_space_cap>;
+            bindings = <&colon_space>, <&dot_space_cap>;
         };
 
     td_comma: td_comma {

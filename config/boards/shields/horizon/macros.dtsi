@@ -1,6 +1,6 @@
 #define MACRO_WAIT 0
-#define MACRO_TAP 1
-#define MACRO_TAP_Q 1
+#define MACRO_TAP 0
+#define MACRO_TAP_Q 0
 
 macros {
     ZMK_MACRO(line_select,
@@ -10,9 +10,9 @@ macros {
     )
     ZMK_MACRO(obs_link,
         wait-ms = <80>;
-        tap-ms = <MACRO_TAP>;
+        tap-ms = <5>;
             bindings = 
-            <&kp RA(N8) &kp RIGHT &kp LS(N8)>,
+            <&kp LC(K)>
             <&kp LC(V)>,
             <&kp RIGHT>;
     )
@@ -25,32 +25,44 @@ macros {
 
 
 // Formatting/ whitespace
-    ZMK_MACRO(comma_space,
-        wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP_Q>;
-        bindings = < &kp COMMA &kp SPACE>;
-    )
-    ZMK_MACRO(semi_space,
-        wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP_Q>;
-        bindings = < &kp LS(COMMA) &kp SPACE>;
-    )
+#define SPACE_MACRO(NAME, KEY)\
+        ZMK_MACRO(NAME, \
+        wait-ms = <MACRO_WAIT>; \
+        tap-ms = <MACRO_TAP_Q>; \
+        bindings = < &kp KEY &kp SPACE>; \
+    ) \
+    SPACE_MACRO(comma_space, COMMA)
+    // ZMK_MACRO(comma_space,
+    //     wait-ms = <MACRO_WAIT>;
+    //     tap-ms = <MACRO_TAP_Q>;
+    //     bindings = < &kp COMMA &kp SPACE>;
+    // )
+    SPACE_MACRO(semi_space, LS(COMMA))
+    // ZMK_MACRO(semi_space,
+    //     wait-ms = <MACRO_WAIT>;
+    //     tap-ms = <MACRO_TAP_Q>;
+    //     bindings = < &kp LS(COMMA) &kp SPACE>;
+    // )
     ZMK_MACRO(dot_space_cap,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp DOT &kp SPACE &sk LSHIFT>;
     )
-    ZMK_MACRO(colon_space_cap,
-        wait-ms = <MACRO_WAIT>;
-        tap-ms = <MACRO_TAP_Q>;
-        bindings = < &kp LS(DOT) &kp SPACE &sk LSHIFT>;
-    )
+    SPACE_MACRO(colon_space, LS(DOT))
+    // ZMK_MACRO(colon_space_cap,
+    //     wait-ms = <MACRO_WAIT>;
+    //     tap-ms = <MACRO_TAP_Q>;
+    //     bindings = < &kp LS(DOT) &kp SPACE &sk LSHIFT>;
+    // )
     ZMK_MACRO(dotdotdot,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp DOT &kp DOT &kp DOT>;
     )
+    // SPACE_MACRO(quest_m, LS(MINUS))
+    // SPACE_MACRO(excl_m, LS(N1))
 
+    
 
 // Alphas
     ZMK_MACRO(macro_QU, 
