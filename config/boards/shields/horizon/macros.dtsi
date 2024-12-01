@@ -12,7 +12,7 @@ macros {
         wait-ms = <80>;
         tap-ms = <5>;
             bindings = 
-            <&kp LC(K)>
+            <&kp LC(K)>,
             <&kp LC(V)>,
             <&kp RIGHT>;
     )
@@ -31,29 +31,14 @@ macros {
         tap-ms = <MACRO_TAP_Q>; \
         bindings = < &kp KEY &kp SPACE>; \
     ) \
-    SPACE_MACRO(comma_space, COMMA)
-    // ZMK_MACRO(comma_space,
-    //     wait-ms = <MACRO_WAIT>;
-    //     tap-ms = <MACRO_TAP_Q>;
-    //     bindings = < &kp COMMA &kp SPACE>;
-    // )
+    SPACE_MACRO(comma_space, COMMA) 
     SPACE_MACRO(semi_space, LS(COMMA))
-    // ZMK_MACRO(semi_space,
-    //     wait-ms = <MACRO_WAIT>;
-    //     tap-ms = <MACRO_TAP_Q>;
-    //     bindings = < &kp LS(COMMA) &kp SPACE>;
-    // )
     ZMK_MACRO(dot_space_cap,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP_Q>;
         bindings = < &kp DOT &kp SPACE &sk LSHIFT>;
     )
     SPACE_MACRO(colon_space, LS(DOT))
-    // ZMK_MACRO(colon_space_cap,
-    //     wait-ms = <MACRO_WAIT>;
-    //     tap-ms = <MACRO_TAP_Q>;
-    //     bindings = < &kp LS(DOT) &kp SPACE &sk LSHIFT>;
-    // )
     ZMK_MACRO(dotdotdot,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP_Q>;
