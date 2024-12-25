@@ -1,5 +1,6 @@
 
 #define my_tapping_term 150
+#define ak_idle_term 300
 
 #define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
 
@@ -104,10 +105,82 @@ behaviors {
     //              , <&kp LS(R)>;
     // };
 
-    // shift_qu: shift_qu_macro {
-    //     my_lk_config;
-    //     bindings = <&macro_QU_cap>, <&macro_QU>;
-    // };
+    // Adaptive Keys
+    ak_m: ak_m {
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <&kp M>;
+
+        akt_gm { trigger-keys = <G>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp L>; };
+        akt_xm { trigger-keys = <X>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp BSPC &kp X &kp L>; };
+        akt_wm { trigger-keys = <W>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp L>; };
+    };
+
+    ak_h: ak_h {
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <&kp H>;
+
+        akt_ah { trigger-keys = <A>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp U>; };
+        akt_uh { trigger-keys = <U>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp A>; };
+        akt_eh { trigger-keys = <E>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp O>; };
+        akt_oh { trigger-keys = <O>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp E>; };
+    };
+
+    ak_b: ak_b {
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <&kp B>;
+
+        akt_pb { trigger-keys = <P>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp S>; };
+        akt_cb { trigger-keys = <C>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp BSPC &kp S &kp B>; };
+    };
+
+    ak_c: ak_c {
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <&kp C>;
+
+        akt_tc { trigger-keys = <T>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp C &kp H>; };
+        akt_bc { trigger-keys = <B>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp S>; };
+    };
+
+    ak_g: ak_g {
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <&kp G>;
+
+        akt_mg { trigger-keys = <M>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp BSPC &kp L &kp G>; };
+        akt_kg { trigger-keys = <K>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp L>; };
+        akt_jg { trigger-keys = <J>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp P &kp G>; }; //jpg
+    };
+
+    ak_j: ak_j {
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <&kp J>;
+
+        akt_gj { trigger-keys = <G>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp T &kp H>; };
+        akt_wj { trigger-keys = <W>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp L>; };
+    };
+
+    ak_k: ak_k {
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <&kp K>;
+
+        akt_gk { trigger-keys = <G>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp BSPC &kp L &kp K>; };
+        akt_tk { trigger-keys = <T>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp BSPC &kp C &kp K >; };
+    };
+
+    ak_u: ak_u {
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <&kp U>;
+
+        akt_yu { trigger-keys = <Y>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp I; };
+    };
+
 
     //
     // Digraphs

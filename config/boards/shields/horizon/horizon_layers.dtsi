@@ -38,12 +38,14 @@ handsdown_code {
 
 left_layer {
     bindings = <
-&as LS(LC(Y)) LC(Y) &kp LC(Z)  AS(MINUS)   AS(SEMI)   AS(LBKT)        &kp RA(RBKT)                  &none          &sel_word      &kp UP    &kp LS(MINUS) &none               &none
-&kp LC(X)           AS(SQT)    &kp LS(N1)  &kp RA(Q)  &kp LS(N6)      &kp LS(N5)                    &kp PAGE_UP    &kp LEFT   &kp DOWN  &kp RIGHT     &as EQUAL LS(EQUAL) &none
-&kp LC(C)           &kp LSHIFT &kp GRAVE   &trans     &kp LC(LS(TAB)) &kp LC(TAB)  &none  &none     &kp PAGE_DOWN  &kp LS(N4) &kp RA(E) &kp LS(N3)    &kp LS(RBKT)        &none
-&as LS(LC(V)) LC(V) &kp LCTRL  &kp RET     &none      &kp LC(LS(P))   &trans       &none  &kp K_APP &mo l_R        &kp LALT   &trans    &trans        &trans              &trans                                                                                 
+&as LS(LC(Y)) LC(Y) &kp LC(Z)  AS(de_s)  AS(de_oe)  AS(de_ue)       &kp de_til                    &none          &sel_word  &kp UP    &kp s_que    &none      &none
+&kp LC(X)           AS(de_ae)  &kp s_exl &kp s_at   &kp s_amp       &kp s_per                     &kp PAGE_UP    &kp LEFT   &kp DOWN  &kp RIGHT    AS(s_gra)  &none
+&kp LC(C)           &kp LSHIFT &kp GRAVE &trans     &kp LC(LS(TAB)) &kp LC(TAB)  &none  &none     &kp PAGE_DOWN  &kp s_dol  &kp s_eur &kp sec      &kp s_ast  &none
+&as LS(LC(V)) LC(V) &kp LCTRL  &none     &none      &kp LC(LS(P))   &trans       &none  &kp K_APP &mo l_R        &kp LALT   &trans    &trans       &trans     &trans                                                                                 
     >;
 };
+
+
 
 right_layer {
     bindings = <

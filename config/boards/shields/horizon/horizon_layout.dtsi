@@ -81,3 +81,19 @@
 #define RH4 49
 #define RH5 50
 #define RH6 51
+
+#define de_ae SQT
+#define de_s MINUS
+#define de_oe SEMI
+#define de_ue LBKT
+#define de_til RA(RBKT)
+#define s_at RA(Q)
+#define s_exl LS(N1)
+#define s_dol LS(N4)
+#define s_eur RA(E)
+#define s_ast LS(RBKT)
+#define s_sec LS(N3)
+#define s_amp LS(N6)
+#define s_per LS(N5)
+#define s_que LS(MINUS)
+#define s_gra EQUAL
