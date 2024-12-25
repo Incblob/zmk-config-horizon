@@ -178,7 +178,7 @@ behaviors {
         #binding-cells = <0>;
         bindings = <&kp U>;
 
-        akt_yu { trigger-keys = <Y>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp I; };
+        akt_yu { trigger-keys = <Y>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp I>; };
     };
 
 
