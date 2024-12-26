@@ -109,7 +109,7 @@ behaviors {
     ak_m: ak_m {
         compatible = "zmk,behavior-adaptive-key";
         #binding-cells = <0>;
-        bindings = <&kp M>;
+        bindings = <AS(M)>;
 
         akt_gm { trigger-keys = <G>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp L>; };
         akt_xm { trigger-keys = <X>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp BSPC &kp X &kp L>; };
