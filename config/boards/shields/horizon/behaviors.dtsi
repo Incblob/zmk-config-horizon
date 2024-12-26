@@ -106,6 +106,19 @@ behaviors {
     // };
 
     // Adaptive Keys
+
+    // M turns to L After X,W,G. 
+    // G turns previous to L for M. MG->GL
+    // G turns to L before and after K, GK->LK KG->KL
+    // J expands G -> GTH,
+    // H switches row for A,U,E,O
+    // B and C -> BS, SB  B stands for S
+    // B after P -> PS
+    // C after T expands -> TCH
+    // TK turns to C before K -> CK
+    // U turns to I after Y (de)  
+
+
     ak_m: ak_m { // becomes L M->L: for G,X,W
         compatible = "zmk,behavior-adaptive-key";
         #binding-cells = <0>;
@@ -127,7 +140,7 @@ behaviors {
         akt_oh { trigger-keys = <O>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp E>; };
     };
 
-    ak_b: ak_b { // raises to S for P, changes C to S
+    ak_b: ak_b { // raises to PB->PS. BC -> BS, CB->SB
         compatible = "zmk,behavior-adaptive-key";
         #binding-cells = <0>;
         bindings = <AS(B)>;
@@ -136,7 +149,7 @@ behaviors {
         akt_cb { trigger-keys = <C>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp BSPC &kp S &kp B>; };
     };
 
-    ak_c: ak_c { // expands TC-> TCH, changes to S for C
+    ak_c: ak_c { // expands TC-> TCH, CB->SB (see above)
         compatible = "zmk,behavior-adaptive-key";
         #binding-cells = <0>;
         bindings = <AS(C)>;
