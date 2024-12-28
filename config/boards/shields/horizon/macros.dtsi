@@ -23,6 +23,12 @@ macros {
         bindings = < &kp LC(LEFT) &kp LC(LS(RIGHT))>;
     )
 
+    ZMK_MACRO(unstuck, 
+        wait-ms = <MACRO_WAIT>;
+        tap-ms = <MACRO_TAP_Q>;
+        bindings = <&macro_release &kp LC(LEFT) &kp LC(LS(RIGHT))>;
+        )
+
 
 // Formatting/ whitespace
 #define SPACE_MACRO(NAME, KEY)\
