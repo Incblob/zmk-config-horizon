@@ -1,9 +1,8 @@
-
 default_layer {
     bindings = <
 &kp ESC         AS(F12) AS(W)    AS(F)         AS(P)         AS(B)                                   AS(J)         AS(L)    AS(U)     AS(Z)   &as LC(G) LC(F) &kp LC(HOME)
 &ss LSHFT LSHFT AS(Q)   AS(R)    AS(S)         AS(T)         AS(G)                                   AS(M)         AS(N)    AS(E)     AS(I)   &ak_apo         &kp LC(END)
-AS(TAB)         AS(A)   AS(X)    AS(C)         AS(D)         AS(V)        &kp AS(F12)      &caps_word  AS(K)         AS(H)  &td_comma &td_dot  AS(O)         AS(RET)
+AS(TAB)         AS(A)   AS(X)    AS(C)         AS(D)         AS(V)        &kp AS(F12)      &caps_word  AS(K)       AS(H)  &td_comma &td_dot  AS(O)         AS(RET)
 &kp LCTRL       AS(Y)   &kp LGUI &kp LG(LS(S)) &mt LALT ESC  &lt l_L SPACE  &kp BSPC     &kp DELETE  &lt l_R SPACE AS(FSLH) &kp LEFT  &kp UP  &kp DOWN        &kp RIGHT
     >;
 };
@@ -21,7 +20,7 @@ coding_layer {
     bindings = <    
 &trans  AS(F12) AS(W)   &ak_m  &ak_g  &ak_j                         &none           &td_dot &td_qu  AS(Y)   &trans   &trans
 &trans  &ak_x   &ak_c   AS(N)  AS(T)  &ak_k                         &td_comma       AS(A)   AS(E)   AS(I)   AS(F)    &trans
-&trans  AS(S)   AS(P)   AS(L)  AS(D)  AS(V)     &trans    &trans    &ak_apo &ak_u   AS(O)   AS(Z)   &ak_h   &trans
+&trans  AS(S)   AS(P)   AS(L)  AS(D)  AS(V)     &trans    &trans    &ak_apo         &ak_u   AS(O)   AS(Z)   &ak_h   &trans
 &trans  &ak_b   &trans  &trans &trans &lt l_L R &trans    &mt LSHIFT DELETE &trans  &trans &trans  &trans  &trans    &trans
     >;
 };
