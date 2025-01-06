@@ -3,6 +3,7 @@
 #define ak_idle_term 200
 
 #define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
+#define ALPHAS A B C D E F G H I J H K L M N O P Q R S T U V W X Y Z
 
 #define     my_hrm_config \
             compatible = "zmk,behavior-hold-tap"; \
@@ -194,7 +195,22 @@ behaviors {
         akt_yu { trigger-keys = <Z>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp I>; };
     };
 
+    ak_x: ak_x { // GX->GT, MX->MB
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <AS(X)>;
 
+        akt_mx { trigger-keys = <M>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp B>; };
+        akt_gx { trigger-keys = <G>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp T >; };
+    };
+
+    ak_apo: ak_apo { // GX->GT, MX->MB
+        compatible = "zmk,behavior-adaptive-key";
+        #binding-cells = <0>;
+        bindings = <AS(NON_US_HASH)>;
+
+        akt_alpha { trigger-keys = <ALPHAS>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp LS(NON_US_HASH)>; };
+    };
     //
     // Digraphs
     //
