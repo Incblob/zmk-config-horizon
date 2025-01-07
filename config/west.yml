@@ -8,7 +8,7 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware #urob # or zmkfirmware, see comment below
+      remote: urob # or zmkfirmware, see comment below
       revision: main
       import: app/west.yml
     - name: zmk-adaptive-key
