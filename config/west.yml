@@ -9,6 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware #urob # or zmkfirmware, see comment below
+      revision: main
       import: app/west.yml
     - name: zmk-adaptive-key
       remote: urob
