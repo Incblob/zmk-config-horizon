@@ -151,6 +151,6 @@ macros {
         )
     ZMK_MACRO(hd_code, 
         tap-ms = <MACRO_TAP>;
-        bindings = <&tog_on l_HD &tog_on l_HD_CODE>; 
+        bindings = <&tog l_HD_CODE &tog l_HD>; 
         )
 };
