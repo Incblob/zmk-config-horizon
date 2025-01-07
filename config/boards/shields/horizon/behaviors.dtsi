@@ -62,6 +62,13 @@ behaviors {
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <1>;    // <---[[the W key]]
     };
+
+    tog_on: toggle_layer_on_only {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer On";
+            toggle-mode = "on";
+        };
     //
     // TAP DANCE
     //
@@ -71,7 +78,7 @@ behaviors {
                  , <AS(DOT)>
                  , <&dotdotdot>;
     };
-    
+
     mt_dot: mt_dot {
             my_lk_config;
             bindings = <&colon_space>, <&dot_space_cap>;

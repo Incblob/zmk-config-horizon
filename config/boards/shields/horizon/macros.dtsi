@@ -149,4 +149,8 @@ macros {
                     , <&macro_release &kp RSHFT>
                     , <&macro_tap &kp N &kp G>;
         )
+    ZMK_MACRO(hd_code, 
+        tap-ms = <MACRO_TAP>;
+        bindings = <&tog_on l_HD &tog_on l_HD_CODE>
+        )
 };
