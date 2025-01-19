@@ -178,7 +178,7 @@ behaviors {
         bindings = <AS(J)>;
 
         akt_gj { trigger-keys = <G>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp T &kp H>; };
-        akt_wj { trigger-keys = <W>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp L>; };
+        // akt_wj { trigger-keys = <W>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp L>; };
     };
 
     ak_k: ak_k { // GK->LK, TK->CK
@@ -207,7 +207,7 @@ behaviors {
         akt_gx { trigger-keys = <G>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp T >; };
     };
 
-    ak_apo: ak_apo { // GX->GT, MX->MB
+    ak_apo: ak_apo { // # becomes '
         compatible = "zmk,behavior-adaptive-key";
         #binding-cells = <0>;
         bindings = <AS(NON_US_HASH)>;
