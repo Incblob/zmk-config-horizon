@@ -10,14 +10,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define l_ALPHA 0
-#define l_CODE 1
-#define l_HD 2
-#define l_HD_CODE 3
-#define l_L  4
-#define l_R  5
-#define l_B  6
-#define l_G1 7
-#define l_G2 8
+#define l_HD 1
+#define l_HD_CODE 2
+#define l_L  3
+#define l_R  4
+#define l_B  5
+#define l_G1 6
+#define l_G2 7
 
 
 &mt {

@@ -21,11 +21,11 @@ combos {
 // NAV 
 //
 
-COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4,  <l_ALPHA l_CODE l_L l_HD l_HD_CODE>)
-COMBO_LAYER(ctl_bsb, &kp LC(BSPC), RB2 RB3,       <l_ALPHA l_CODE l_L l_HD l_HD_CODE>)
-COMBO_LAYER(end, &kp END, RM2 RM3,                <l_ALPHA l_CODE l_L l_HD l_HD_CODE>)
-COMBO_LAYER(home, &kp HOME, RM1 RM2,              <l_ALPHA l_CODE l_L l_HD l_HD_CODE>)
-COMBO_LAYER(both, &mo l_B, LH5 RH1,         <l_HD l_HD_CODE>)
+COMBO_LAYER(enter, &mt LS(ENTER) ENTER, RB3 RB4,  <l_ALPHA l_L l_HD l_HD_CODE>)
+COMBO_LAYER(ctl_bsb, &kp LC(BSPC), RB2 RB3,       <l_ALPHA l_L l_HD l_HD_CODE>)
+COMBO_LAYER(end, &kp END, RM2 RM3,                <l_ALPHA l_L l_HD l_HD_CODE>)
+COMBO_LAYER(home, &kp HOME, RM1 RM2,              <l_ALPHA l_L l_HD l_HD_CODE>)
+COMBO_LAYER(both, &mo l_B, LH5 RH1,               <l_HD l_HD_CODE>)
 
 //
 // H Digraphs
