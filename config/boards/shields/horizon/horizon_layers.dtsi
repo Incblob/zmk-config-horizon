@@ -2,7 +2,7 @@ default_layer {
     bindings = <
 &kp ESC         AS(F12) AS(W)    AS(F)         AS(P)         AS(B)                                   AS(J)         AS(L)    AS(U)     AS(Z)   &as LC(G) LC(F) &kp LC(HOME)
 &ss LSHFT LSHFT AS(Q)   AS(R)    AS(S)         AS(T)         AS(G)                                   AS(M)         AS(N)    AS(E)     AS(I)   &ak_apo         &kp LC(END)
-AS(TAB)         AS(A)   AS(X)    AS(C)         AS(D)         AS(V)          AS(F12)      &caps_word  AS(K)         AS(H)  AS(COMMA)  AS(DOT)  AS(O)           AS(RET)
+AS(TAB)         AS(A)   AS(X)    AS(C)         AS(D)         AS(V)          AS(F12)      &caps_word  AS(K)         AS(H)  AS(COMMA)  AS(DOT)  AS(O)           &as LC(RET) RET
 &kp LCTRL       AS(Y)   &kp LGUI &kp LG(LS(S)) &mt LALT ESC  &lt l_L SPACE  &kp BSPC     &kp DELETE  &lt l_R SPACE AS(FSLH) &kp LEFT  &kp UP  &kp DOWN        &kp RIGHT
     >;
 };
@@ -28,10 +28,10 @@ handsdown_code {
 
 left_layer {
     bindings = <
-&as LS(LC(Y)) LC(Y) &kp LC(Z)  AS(de_s)  AS(de_oe)  AS(de_ue)       &kp de_til                    &none          &sel_word  &kp UP    &kp s_que    &none      &none
-&kp LC(X)           AS(de_ae)  &kp s_exl &kp s_at   &kp s_amp       &kp s_per                     &kp PAGE_UP    &kp LEFT   &kp DOWN  &kp RIGHT    AS(s_gra)  &none
-&kp LC(C)           &kp LSHIFT &kp GRAVE &trans     &kp LC(LS(TAB)) &kp LC(TAB)  &none  &none     &kp PAGE_DOWN  &kp s_dol  &kp s_eur &kp s_sec      &kp s_ast  &none
-&as LS(LC(V)) LC(V) &kp LCTRL  &none     &kp LC(A)     &kp LC(LS(P))   &trans       &none  &kp K_APP &mo l_R        &kp LALT   &trans    &trans       &trans     &trans                                                                                 
+AS(LC(Y))   &kp LC(Z)  AS(de_s)  AS(de_oe)  AS(de_ue)       &kp de_til                    &none          &sel_word  &kp UP    &kp s_que    &none      &none
+&kp LC(X)   AS(de_ae)  &kp s_exl &kp s_at   &kp s_amp       &kp s_per                     &kp PAGE_UP    &kp LEFT   &kp DOWN  &kp RIGHT    AS(s_gra)  &none
+&kp LC(C)   &kp LSHIFT &kp GRAVE &trans     &kp LC(LS(TAB)) &kp LC(TAB)  &none  &none     &kp PAGE_DOWN  &kp s_dol  &kp s_eur &kp s_sec      &kp s_ast  &none
+AS(LC(V))   &kp LCTRL  &none     &kp LC(A)     &kp LC(LS(P))   &trans       &none  &kp K_APP &mo l_R        &kp LALT   &trans    &trans       &trans     &trans                                                                                 
     >;
 };
 
