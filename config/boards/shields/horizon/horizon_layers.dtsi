@@ -19,7 +19,7 @@ coding_layer {
  handsdown {
     bindings = <    
 &trans  AS(F12) AS(W)   &ak_m  &ak_g  &ak_j                         &none           &td_dot &td_qu  AS(Y)   &trans   &trans
-&trans  &ak_x   &ak_c   AS(N)  AS(T)  &ak_k                         &td_comma       AS(A)   AS(E)   AS(I)   AS(F)    &trans
+&trans  &ak_x   &ak_c   AS(N)  AS(T)  &ak_k                         &ht_comma 0 0   AS(A)   AS(E)   AS(I)   AS(F)    &trans
 &trans  AS(S)   AS(P)   AS(L)  AS(D)  AS(V)     &trans    &trans    &ak_apo         &ak_u   AS(O)   AS(Z)   &ak_h   &trans
 &trans  &ak_b   &trans  &trans &trans &lt l_L R &trans    &mt LSHIFT DELETE &trans  &trans &trans  &trans  &trans    &trans
     >;
