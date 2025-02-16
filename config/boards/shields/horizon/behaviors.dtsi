@@ -83,7 +83,7 @@ behaviors {
     td_comma: td_comma {
         compatible = "zmk,behavior-tap-dance"; 
         #binding-cells = <0>; 
-        tapping-term-ms = <100>;
+        tapping-term-ms = <200>;
         bindings = <&mt_comma 0 0>
                  , <AS(COMMA)>;
     };
