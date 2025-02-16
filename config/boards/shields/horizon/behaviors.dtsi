@@ -102,13 +102,13 @@ behaviors {
         quick-tap-ms = <200>;
         bindings = <&td_comma_new_hold>, <&td_comma_new>;
         retro-tap;        
-    }
+    }; 
 
     td_comma_new_hold: td_comma_new_hold{
         TD_template;
         bindings = <&semi_space>
                  , <&kp LS(COMMA)>;
-    }
+    };
 
     td_comma_new: td_comma_new {
         TD_template;
