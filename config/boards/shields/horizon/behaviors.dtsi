@@ -1,9 +1,10 @@
 
-#define my_tapping_term 150
+#define my_tapping_term 100
 #define ak_idle_term 200
 
-#define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>
+#define TD_template compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <180>
 #define ALPHAS A B C D E F G H I J H K L M N O P Q R S T U V W X Y Z
+
 
 #define     my_hrm_config \
             compatible = "zmk,behavior-hold-tap"; \
@@ -33,20 +34,20 @@ behaviors {
     ss: shift_sticky {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>; 
         };
 
-    lt_r: lt_r {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <40>;
-            // quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>; 
-        };
+    // lt_r: lt_r {
+    //         compatible = "zmk,behavior-hold-tap";
+    //         #binding-cells = <2>;
+    //         tapping-term-ms = <40>;
+    //         // quick-tap-ms = <0>;
+    //         flavor = "tap-preferred";
+    //         bindings = <&mo>, <&kp>; 
+    //     };
 
     mtg: mod_tap_game {
         compatible = "zmk,behavior-hold-tap";
@@ -81,18 +82,13 @@ behaviors {
         };
 
     td_comma: td_comma {
-        compatible = "zmk,behavior-tap-dance"; 
-        #binding-cells = <0>; 
-        tapping-term-ms = <200>;
+        TD_template;
         bindings = <&mt_comma 0 0>
                  , <AS(COMMA)>;
     };
 
     mt_comma: mt_comma {
-            compatible = "zmk,behavior-hold-tap"; 
-            #binding-cells = <2>; 
-            tapping-term-ms = <100>; 
-            flavor = "tap-preferred";
+            my_lk_config;
             bindings = <&semi_space>, <&comma_space>;
         };
 
