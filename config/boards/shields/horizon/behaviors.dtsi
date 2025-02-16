@@ -99,9 +99,7 @@ behaviors {
         #binding-cells = <2>;
         flavor = "tap-preferred";
         tapping-term-ms = <200>;
-        quick-tap-ms = <200>;
-        bindings = <&td_comma_new_hold>, <&td_comma_new>;
-        retro-tap;        
+        bindings = <&td_comma_new_hold>, <&td_comma_new>;     
     }; 
 
     td_comma_new_hold: td_comma_new_hold{
