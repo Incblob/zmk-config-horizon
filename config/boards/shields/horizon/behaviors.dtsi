@@ -93,15 +93,15 @@ behaviors {
             my_lk_config;
             bindings = <&semi_space>, <&comma_space>;
         };
-
+    //
     ht_comma: ht_comma {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <200>;
+        tapping-term-ms = <210>;
+        quick-tap-ms = <210>;
         bindings = <&td_comma_new_hold>, <&td_comma_new>;
-        retro-tap;        
+        // retro-tap;        
     }; 
 
     td_comma_new_hold: td_comma_new_hold{
@@ -123,7 +123,7 @@ behaviors {
     //     tapping-term-ms = <200>;
     //     bindings = <&kp SPACE>, <&kp LCTRL>;
     // };
-    
+
     // htd_kp_space_ctrl: htd_kp_space_ctrl {
     //     compatible = "zmk,behavior-hold-tap";
     //     #binding-cells = <2>;
