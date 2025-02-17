@@ -40,6 +40,12 @@ macros {
     SPACE_MACRO(semi_space, LS(COMMA))
     SPACE_MACRO(colon_space, LS(DOT))
 
+    ZMK_MACRO(semi_newline,
+        wait-ms = <MACRO_WAIT>;
+        tap-ms = <MACRO_TAP_Q>;
+        bindings = < &kp LS(COMMA) &kp RET>;
+    )
+
     ZMK_MACRO(dot_space_cap,
         wait-ms = <MACRO_WAIT>;
         tap-ms = <MACRO_TAP_Q>;

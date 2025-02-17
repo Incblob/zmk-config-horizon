@@ -9,10 +9,10 @@ AS(TAB)         AS(A)   AS(X)    AS(C)         AS(D)         AS(V)          AS(F
 
 coding_layer {
     bindings = <
-&trans &trans &trans &trans &trans &trans                 &trans &trans &trans    &trans  &trans &trans
-&trans &trans &trans &trans &trans &trans                 &trans &trans &trans    &trans  &trans &trans
-&trans &trans &trans &trans &trans &trans  &trans  &trans &trans &trans &trans    AS(DOT) &trans &trans
-&trans &trans &trans &trans &trans &trans  &trans  &trans &trans &trans &trans    &trans  &trans &trans
+&trans &trans &trans &trans &trans &trans                 &trans &trans &trans        &trans  &trans &trans
+&trans &trans &trans &trans &trans &trans                 &trans &trans &trans        &trans  &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans  &trans &trans &trans &td_comma_code AS(DOT) &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans  &trans &trans &trans &trans         &trans  &trans &trans
     >;
 };
 
@@ -27,10 +27,10 @@ coding_layer {
 
 handsdown_code {
        bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans     AS(DOT) &trans &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans  &trans &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans          AS(DOT) &trans &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &td_comma_code  &trans  &trans &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans &trans  &trans  &trans
     >;
 };
 
