@@ -154,10 +154,10 @@ behaviors {
         #binding-cells = <0>;
         bindings = <AS(H)>;
 
-        akt_ah { trigger-keys = <A>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp U>; };
-        akt_uh { trigger-keys = <U>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp A>; };
-        akt_eh { trigger-keys = <E>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp O>; };
-        akt_oh { trigger-keys = <O>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp E>; };
+        akt_ah { trigger-keys = <A LS(A)>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp U>; };
+        akt_uh { trigger-keys = <U LS(U)>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp A>; };
+        akt_eh { trigger-keys = <E LS(E)>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp O>; };
+        akt_oh { trigger-keys = <O LS(O)>; max-prior-idle-ms = <ak_idle_term>; bindings = <&kp E>; };
     };
 
     ak_b: ak_b { // raises to PB->PS. BC -> BS, CB->SB
